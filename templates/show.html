@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List of all student !!!</h1>
+    {%for std in object%}
+        <h1>{{std.name}} -  {{std.varsity_id}}-{{std.blood_group}} -{{std.email}}-{{std.phone}}</h1>
+    {%endfor%}
+</body>
+</html>

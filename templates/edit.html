@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">{% csrf_token%}
+  <label>First name:</label><br>
+  <input type="text"  name="name" value="{{ selected_student.Name }}"><br>
+    <label>Varsity id:</label><br>
+  <input type="text"  name="Vid" value="{{ selected_student.Varsity_id  }}" ><br>
+    <label>blood group:</label><br>
+  <input type="text"  name="bgrp" value="{{ selected_student.Blood_group }}" ><br>
+    <label>phone:</label><br>
+  <input type="text"  name="phn" value="{{ selected_student.phone_number }}"><br>
+  <label>Email:</label><br>
+  <input type="email"  name="email" value="{{ selected_student.Email }}"><br><br>
+  <input type="submit" value="edit">
+</form>
+
+
+</body>
+</html>
