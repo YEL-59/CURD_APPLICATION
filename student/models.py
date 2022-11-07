@@ -8,3 +8,4 @@ class Students(models.Model):
     blood_group = models.CharField(max_length=20) 
     phone = models.CharField(max_length=20) 
     email = models.EmailField()
+    address= models.Charfield(max_length=50)
